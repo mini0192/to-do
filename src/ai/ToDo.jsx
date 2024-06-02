@@ -23,9 +23,8 @@ const ToDo = (req) => {
         setTodoList([text, ...todoList])
     }
 
-    const deleteList = (deText) => {
-        const arr = todoList(arr.filter(word => word !== "C"));
-        setTodoList(arr)
+    const deleteList = (getText) => {
+        setTodoList(todoList.filter(t => t !== getText))
     }
 
     return (
@@ -35,11 +34,11 @@ const ToDo = (req) => {
             </button>
             <hr/>
             <div className="scrollObject">
-                { todoList.map(t => (
+                { todoList?.map(t => (
                     <details>
                         <summary>{ t }</summary>
                         <span><Ttl text={ t }/></span>
-                        <button type="button" className="btn btn-outline-secondary inlineObject" onClick={ deleteList(t) }>
+                        <button type="button" className="btn btn-outline-secondary inlineObject" onClick={ () => { deleteList(t) } }>
                             삭제
                         </button>
                         <br/>
