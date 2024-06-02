@@ -1,0 +1,23 @@
+.head {
+    height: 10vh;
+}
+
+.body {
+    height: 80vh;
+}
+
+.logoImg {
+    width: 20%;
+    height: auto;
+}
+
+.foot {
+    height: 10vh;
+}
+
+.mainPage {
+    background-color: rgb(27, 27, 27);
+    border-bottom: solid 1px rgb(71, 71, 71);
+    text-align: center;
+    color: rgb(190, 190, 190);
+}
