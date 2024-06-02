@@ -1,6 +1,5 @@
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 
-import Ttl from './Ttl';
 import ToDo from './ToDo';
 
 const Listen = () => {
