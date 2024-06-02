@@ -38,7 +38,7 @@ const ToDo = (req) => {
                     <details>
                         <summary>{ t }</summary>
                         <span><Ttl text={ t }/></span>
-                        <button type="button" className="btn btn-outline-secondary inlineObject" onClick={ () => { deleteList(t) } }>
+                        <button type="button" className="inlineObject btn btn-outline-secondary inlineObject" onClick={ () => { deleteList(t) } }>
                             삭제
                         </button>
                         <br/>

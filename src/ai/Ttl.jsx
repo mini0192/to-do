@@ -12,9 +12,7 @@ const Ttl = (req) => {
 
 
     return (
-        <div className="ttlPage page">
-            <img className="blackToWhite hoverObject" style={{marginRight:"20px"}}width="30" src="speaker.png" onClick={handleSpeak}/>
-        </div>
+        <img className="inlineObject blackToWhite hoverObject" style={{marginRight:"20px"}}width="30" src="speaker.png" onClick={handleSpeak}/>
     );
 };
 
