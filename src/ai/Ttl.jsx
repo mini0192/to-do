@@ -13,7 +13,7 @@ const Ttl = (req) => {
 
     return (
         <div className="ttlPage page">
-            <button onClick={handleSpeak}>음성 재생</button>
+            <img className="blackToWhite hoverObject" style={{marginRight:"20px"}}width="30" src="speaker.png" onClick={handleSpeak}/>
         </div>
     );
 };

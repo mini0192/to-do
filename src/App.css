@@ -4,11 +4,19 @@
 
 .body {
     height: 80vh;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .logoImg {
-    width: 20%;
-    height: auto;
+    height: 300px;
+    /* width: 20%; */
+}
+
+.App {
+    background-color: rgb(27, 27, 27);
 }
 
 .foot {
@@ -20,4 +28,48 @@
     border-bottom: solid 1px rgb(71, 71, 71);
     text-align: center;
     color: rgb(190, 190, 190);
+}
+
+.logoSection {
+    padding-top: 10%;
+    grid-column: 1/2;
+    border-right: solid 1px rgb(71, 71, 71);
+}
+
+.mainSection {
+    grid-column: 2/3;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.inlineObject {
+    display: inline;
+}
+
+
+.blackToWhite {
+    filter: invert(100%);
+}
+
+.hoverObject:hover {
+    filter: invert(70%);
+}
+
+
+.on {
+    filter: invert(70%);
+}
+
+.micObject {
+    margin: 5px;
+}
+
+.scrollObject {
+    overflow: scroll;
+    height: 350px;
+    width: auto;
+}
+
+.scrollObject::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
 }

@@ -4,7 +4,13 @@ import Ttl from './ai/Ttl';
 const Body = () => {
     return (
         <div className= "body mainPage">
-            <Listen />
+            <div className='logoSection'>
+                <img className='logoImg' src='cat.png'/>
+                <p><strong>Example</strong>: "찬장에 있는 사료 훔치기</p>
+            </div>
+            <div className="mainSection">
+                <Listen />
+            </div>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 
 import Ttl from './Ttl';
+import ToDo from './ToDo';
 
 const Listen = () => {
     const {
@@ -16,23 +17,17 @@ const Listen = () => {
 
     return (
         <div className="listenPage page">
-            <img className='logoImg' src='logo.png'/>
-            <p>Microphone: {listening ? 'on' : 'off'}</p>
-
-            {/* 음성 듣기 SpeechRecognition.startListening()
+            {
+            /* 음성 듣기 SpeechRecognition.startListening()
             음성 듣기 중지 SpeechRecognition.stopListening()
             음성 듣기 초기화 resetTranscript()
-            음성 데이터 transcript */}
+            음성 데이터 transcript */
+            }
 
-            <button
-                type="button"
-                className="btn btn-outline-secondary"
-                onClick={SpeechRecognition.startListening}>
-                Start
-            </button>
+            <img src="mic.png" className={`micObject blackToWhite hoverObject ${listening ? "on" : ""}`} width="50" onClick={ SpeechRecognition.startListening }/>
 
             <p>{transcript}</p>
-            <Ttl text={ transcript }/>
+            <ToDo text={ transcript }/>
         </div>
     );
 }
